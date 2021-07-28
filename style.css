@@ -1,7 +1,13 @@
-.slider img {
+.slideshow img {
     display: none;
+    border-radius: 5px;
+
 }
 
-.slider img.active {
+.slideshow img.active {
     display: inline-block;
+}
+
+.chevron {
+    cursor:pointer;
 }
