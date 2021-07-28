@@ -12,7 +12,11 @@
 </head>
 <body>
     <div id="root">
-        
+        <div class="slider d-flex justify-content-around align-items-center ">
+            <i class="fas fa-chevron-left fa-2x"></i>
+            <img v-for = "item in image" :src="item" alt="landscape" class="img-fluid">
+            <i class="fas fa-chevron-right fa-2x"></i>
+        </div>
 
     </div>
     <script src="./script.js"></script>
