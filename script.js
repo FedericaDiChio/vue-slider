@@ -12,7 +12,7 @@ const root = new Vue ({
         //posizione di partenza;
         currentIndex: 0,
         // array di immagini 
-        images: [
+        pictures: [
             "./img/image1.jpg",
             "./img/image2.jpg",
             "./img/image3.jpg",
@@ -27,6 +27,21 @@ const root = new Vue ({
             } return " ";
             //scritta in ternario
         // return this.currentIndex === index ? "active" : " ";
+        },
+        forward(){
+            if (this.currentIndex === this.pictures.length - 1){
+                this.currentIndex = 0;
+            } else {
+                this.currentIndex++;
+        
+            };
+        },        
+        backwards(){
+            if (this.currentIndex === 0){
+                this.currentIndex = this.pictures.length - 1;
+            } else {
+                this.currentIndex--;
+            };
         }
         
     } 

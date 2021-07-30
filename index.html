@@ -16,18 +16,18 @@
            <div class="row">
                <!-- CHEVRON LEFT  -->
             <div class="col-3 d-flex justify-content-center align-items-center">
-                <i class="fas fa-chevron-left fa-2x"></i>
+                <i class="fas fa-chevron-left fa-2x chevron" v-on:click="backwards"></i>
             </div>
             <!-- IMG  -->
             <div class="col-6 d-flex align-items-center">
-                <img v-for="(item, index) in images" 
+                <img v-for="(item, index) in pictures" 
                 :src="item" alt="landscape" 
                 class="img-fluid"
                 v-bind:class="isActive(index)">
             </div>
             <!-- CHEVRON RIGHT  -->
             <div class="col-3 d-flex justify-content-center align-items-center">
-                <i class="fas fa-chevron-right fa-2x chevron"></i>
+                <i class="fas fa-chevron-right fa-2x chevron" v-on:click="forward"></i>
             </div>            
            </div>
         </div>

@@ -1,7 +1,8 @@
+
 .slideshow img {
     display: none;
     border-radius: 5px;
-
+    
 }
 
 .slideshow img.active {
